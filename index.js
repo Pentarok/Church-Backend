@@ -11,7 +11,8 @@ const port = 5000;
 // Middleware
 app.use(cors({
     origin:["https://church-frontend-kappa.vercel.app"],
-    methods:["GET","POST"]
+    methods:["GET","POST"],
+    credentials: true
 }));
 app.use(express.json())
 app.use(bodyParser.json());  // To parse JSON payloads
