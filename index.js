@@ -10,7 +10,7 @@ const port = 5000;
 
 // Middleware
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://church-frontend-kappa.vercel.app",
     methods:["GET","POST"]
 }));
 app.use(express.json())
@@ -53,6 +53,6 @@ app.post('/api/contact', async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+    console.log(`Server is up and  running `);
 });
 
